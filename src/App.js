@@ -1,13 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Header from "./components/Header/Header";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Tajbiul</p>
-        <p>The project name is Fun Park.</p>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+        <Route exact path="/">
+            <Header />
+          </Route>
+          <Route path="/header">
+            <Header></Header>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
