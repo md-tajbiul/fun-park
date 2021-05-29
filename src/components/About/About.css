@@ -1,9 +1,9 @@
-.about-us{
+.about{
     height: 100vh;
 }
-.about-us img{
-    height: 100vh;
-}
-.about-ul li{
-    text-decoration: none;
+.BorderBottom{
+    background: #ff4a57;
+    height: 3px;
+    width: 350px;
+    margin: 25px auto;
 }

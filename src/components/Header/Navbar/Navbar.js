@@ -1,34 +1,31 @@
 import React from 'react';
+import parkLogo from '../../../Images/parkLogo.png';
 import './Navbar.css';
-import parkLogo from '../../../images/parkLogo.png';
 
 const Navbar = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light navy fixed-top">
-                <div class="container-fluid">
-                    <img className="img-fluid" style={{ width: "80px" }} src={parkLogo} alt="" srcset="" />
-                    <a class="navbar-brand fs-2 ms-1 option" href="#header">Fun Park</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg bg-light fixed-top">
+                <div className="container-fluid"> 
+                <a className="anchorTag navbar-brand fs-2 ms-1" href="/">
+                    <img className="img-fluid" style={{ width: "70px", height: "34px" }} src={parkLogo} alt=""/> Fun Park</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse me-2 justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active option" aria-current="page" href="#header">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active option" aria-current="page" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active option" aria-current="page" href="#offers">Offers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active option" aria-current="page" href="#benefits">Benefits</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active option" aria-current="page" href="#contactUs">Contact Us</a>
-                            </li>
+                    <div className="collapse navbar-collapse me-2 justify-content-end" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="anchorTag nav-link active" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="anchorTag nav-link active" aria-current="page" href="#deals">Deals</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="anchorTag nav-link active" aria-current="page" href="#benefits">Benefits</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="anchorTag nav-link active" aria-current="page" href="#contact">Contact</a>
+                        </li>
                         </ul>
                     </div>
                 </div>

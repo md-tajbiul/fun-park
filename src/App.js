@@ -1,33 +1,34 @@
-
-import logo from './logo.svg';
-import './App.css';
-import React from "react";
+import React, { createContext, useState } from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
 
+  Route, Switch
 } from "react-router-dom";
-import Header from "./components/Header/Header";
+import './App.css';
+import Deals from "./components/Deals/Deals";
+import Main from "./components/Main";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
+export const UserContext = createContext();
 
 function App() {
 
+  const [loggedInUser, setLoggedInUser] = useState({});
+
   return (
     <div>
-      <Router>
-        <Switch>
-        <Route exact path="/">
-            <Header />
-          </Route>
-          <Route path="/header">
-            <Header></Header>
-    </Route>
-          <Route path ="/about">
-            <About></About>
-          </Route>
-        </Switch>
-      </Router>
+      <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Main />
+            </Route>
+            <PrivateRoute path="/deals/:id">
+              <Deals />
+            </PrivateRoute>
+          </Switch>
+        </Router>
+      </UserContext.Provider>
     </div>
   );
 }

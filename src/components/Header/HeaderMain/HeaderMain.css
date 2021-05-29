@@ -1,38 +1,40 @@
-.bg img{
-    filter: blur(3px);
-  -webkit-filter: blur(3px);
-}
-.bg{
-    position: relative;
+.header {
+  background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url(../../../Images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
   text-align: center;
+  color: white;
 }
-.text1{
-    position: absolute;
+.centered {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.button-design{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #d63384;
-    height: 55px;
-    border: #d63384;
-    width: 170px;
-    border-radius: 10px;
-    font-size: 25px;
-    text-align: center;
+.centered h2{
+  font-size: 55px;
+  background-color: rgba(122,119,245, 0.8);
+  padding: 10px;
 }
-h2{
-    font-size: 45px;
+.centered h3{
+  font-size: 50px;
+  background-color: rgba(214,51,132, 0.8);
+  padding: 10x;
 }
-button{
-    margin: 20px;
-    -webkit-transition: color 0.5s;
-    transition: color 1s;
+.headerButton{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: #fff;
 }
-button:hover {
-    color: white;
+.headerButton:hover{
+  color: #ffee00;
+  transition: all 0.5s linear;
 }
