@@ -1,16 +1,23 @@
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import bg from '../../../images/bg.jpg';
 import './HeaderMain.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const HeaderMain = () => {
     
     return (
-        <div className="bg">
-            <img className="img-fluid" style={{backgroundRepeat: "no-repeat", backgroundSize: "cover", width: "100%", height: "655px"}} src={bg} alt="" srcset="" />
-            <h2 className="text1">Make Your Day Better<br/>Fun Park Is Now Open!</h2>
-            <button id="about" className="button-design mt-4">Learn More<FontAwesomeIcon className="ms-1" icon={faArrowRight} size="1x"></FontAwesomeIcon></button>
+        <div className="header">
+            <div class="centered">
+                <h3>Make Your Day Better</h3>
+                <h2>Fun Park Is Now Open!</h2>
+            </div>
+            
+            <div> 
+            <a href="#about">
+            <button className="headerButton">Learn More <FontAwesomeIcon className="ms-1" icon={faAngleRight} size="1x"></FontAwesomeIcon></button>
+            </a>
+            </div>
+
         </div>
     );
 };

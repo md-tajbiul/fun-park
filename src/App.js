@@ -1,14 +1,11 @@
-
-import logo from './logo.svg';
-import './App.css';
 import React from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
 
+  Route, Switch
 } from "react-router-dom";
-import Header from "./components/Header/Header";
+import './App.css';
+import Main from "./components/Main";
 
 
 function App() {
@@ -18,14 +15,8 @@ function App() {
       <Router>
         <Switch>
         <Route exact path="/">
-            <Header />
-          </Route>
-          <Route path="/header">
-            <Header></Header>
-    </Route>
-          <Route path ="/about">
-            <About></About>
-          </Route>
+            <Main />
+        </Route>
         </Switch>
       </Router>
     </div>

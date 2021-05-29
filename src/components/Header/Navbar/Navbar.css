@@ -1,7 +1,10 @@
-.navy{
-    background: #d63384;
-    font-size: 20px;
+.anchorTag {
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 2vw!important;
+    color: #1a8694!important;
 }
-.option:hover{
-    color: white;
+.anchorTag:hover {
+    color: rgba(214,51,132, 0.8)!important;
+    transition: all 0.5s linear;
 }
