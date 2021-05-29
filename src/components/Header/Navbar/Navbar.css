@@ -1,7 +1,7 @@
 .navy{
-    background: #d63384;
+    background: goldenrod;
     font-size: 20px;
 }
-.option:hover{
-    color: white;
+.option{
+    font-weight:500;
 }
