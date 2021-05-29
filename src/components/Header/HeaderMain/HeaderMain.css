@@ -1,0 +1,38 @@
+.bg img{
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.bg{
+    position: relative;
+  text-align: center;
+}
+.text1{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button-design{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d63384;
+    height: 55px;
+    border: #d63384;
+    width: 170px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+h2{
+    font-size: 45px;
+}
+button{
+    margin: 20px;
+    -webkit-transition: color 0.5s;
+    transition: color 1s;
+}
+button:hover {
+    color: white;
+}
