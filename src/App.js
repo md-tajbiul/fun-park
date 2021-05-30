@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Deals from "./components/Deals/Deals";
+import Login from "./components/Login/Login";
 import Main from "./components/Main";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
@@ -26,6 +27,9 @@ function App() {
             <PrivateRoute path="/deals/:id">
               <Deals />
             </PrivateRoute>
+            <Route path="/login">
+              <Login />
+            </Route>
           </Switch>
         </Router>
       </UserContext.Provider>
