@@ -1,0 +1,12 @@
+.logIn{
+    width: 100vh;
+}
+.loginBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+    margin-left: 10vw;
+}
