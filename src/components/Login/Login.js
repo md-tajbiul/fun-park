@@ -15,7 +15,7 @@ const Login = () => {
 
     const history = useHistory()
     const location = useLocation();
-    const { from } = location.state || { from: { pathname: "/deals/:id" } };
+    const { from } = location.state || { from: { pathname: "/" } };
 
     if (firebase.apps.length === 0) {
         firebase.initializeApp(firebaseConfig);
