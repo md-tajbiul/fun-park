@@ -1,7 +1,7 @@
 import React from 'react';
 import About from './About/About';
+import Deals from './Deals/Deals';
 import Footer from './Footer/Footer';
-// import Deals from './Deals/Deals';
 import Header from './Header/Header';
 
 const Main = () => {
@@ -9,8 +9,8 @@ const Main = () => {
         <div>
             <Header/>
             <About/>
-            {/* <Deals/> */}
-            <Footer></Footer>
+            <Deals/>
+            <Footer/>
         </div>
     );
 };

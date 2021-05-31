@@ -26,9 +26,6 @@ const Navbar = () => {
                                 <a className="anchorTag nav-link active" aria-current="page" href="#deals">Deals</a>
                             </li>
                             <li className="nav-item">
-                                <a className="anchorTag nav-link active" aria-current="page" href="#benefits">Benefits</a>
-                            </li>
-                            <li className="nav-item">
                                 <a className="anchorTag nav-link active" aria-current="page" href="#contact">Contact</a>
                             </li>
                             {
