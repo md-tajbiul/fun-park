@@ -8,6 +8,7 @@ import './App.css';
 import Checkout from "./components/Checkout/Checkout";
 import Login from "./components/Login/Login";
 import Main from "./components/Main";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 
@@ -23,9 +24,9 @@ function App() {
             <Route exact path="/">
               <Main />
             </Route>
-            <Route path="/checkout/:title">
+            <PrivateRoute path="/checkout/:title">
               <Checkout />
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login />
             </Route>
