@@ -14,9 +14,10 @@ const Navbar = () => {
                 <div className="container-fluid">
                     <a className="anchorTag navbar-brand fs-2 ms-1" href="/">
                         <img className="img-fluid" style={{ width: "70px", height: "34px" }} src={parkLogo} alt="" /> Fun Park</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                        style={{border:"2px solid black"}}>
+      <span className="navbar-toggler-icon"></span>
+    </button>
                     <div className="collapse navbar-collapse me-2 justify-content-end" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
