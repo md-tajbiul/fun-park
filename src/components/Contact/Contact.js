@@ -17,9 +17,9 @@ const Contact = () => {
 
     return (
         <div id="contact" className="contact">
-            <div className="container">
+            <div className="container pt-5 mt-5">
                 <div>
-                    <h1 className="text-center mb-5 mt-5">Contact Me</h1>
+                    <h1 className="text-center mt-5">Contact Me</h1>
                 </div>
                 <form onSubmit={sendEmail}>
                     <div class="row mb-3">
@@ -41,7 +41,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="text-center">
-                        <button style={{ width: "300px" }} className="btn btn-danger mb-5" type="submit" value="Send">Send</button>
+                        <button style={{ width: "300px", backgroundColor: "#ff4a57", color: "black" }} className="btn btn-danger mb-5" type="submit" value="Send">Send</button>
                     </div>
                 </form>
                 {/* <form onSubmit={sendEmail}>

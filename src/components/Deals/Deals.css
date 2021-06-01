@@ -1,6 +1,41 @@
-/* .dealBox {
+#deals {
+    height: 100vh;
 }
 
 .dealBox img {
+    transition: .5s ease;
     width: 100%;
-} */
+    height: 30vh;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text {
+    background-color: #1A8694;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 50px;
+  }
+  .text:hover {
+    background-color: #137481;
+    transition: .5s ease;
+  }
+
+  .dealBox:hover .image {
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  
+  .dealBox:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+  }

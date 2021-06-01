@@ -1,13 +1,13 @@
-import React, { useContext, useState } from 'react';
 import firebase from "firebase/app";
 import "firebase/auth";
-import Navbar from '../Header/Navbar/Navbar';
+import React, { useContext, useState } from 'react';
+import { useHistory, useLocation } from 'react-router';
+import { UserContext } from '../../App';
 import '../../App.css';
 import firebaseConfig from '../../firebase.config';
-import { UserContext } from '../../App';
-import { useHistory, useLocation } from 'react-router';
-import './Login.css';
 import googleIcon from '../../Images/googleIcon.png';
+import Navbar from '../Header/Navbar/Navbar';
+import './Login.css';
 
 const Login = () => {
 
