@@ -42,4 +42,10 @@
   .headerButton {
     margin-top: 85vh;
   }
+  #deals{
+    height: 250vh;
+  }
+  #about{
+    height: 215vh;
+  }
 }

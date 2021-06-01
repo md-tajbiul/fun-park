@@ -1,6 +1,7 @@
 import React from 'react';
 import Deal from './Deal';
 import './Deals.css';
+import '../Header/HeaderMain/HeaderMain.css';
 
 const dealsData = [ { 
   id: 1,
