@@ -10,8 +10,8 @@
 }
 .centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  left: 50%; 
+  margin-top: 50vh;
   transform: translate(-50%, -50%);
 }
 .centered h2{
@@ -26,8 +26,7 @@
 }
 .headerButton{
   position: absolute;
-  top: 62%;
-  left: 50%;
+  margin-top: 65vh;
   transform: translate(-50%, -50%);
   font-size: 22px;
   background: none;
@@ -37,4 +36,10 @@
 .headerButton:hover{
   color: #ffee00;
   transition: all 0.5s linear;
+}
+
+@media only screen and (min-width: 351px) and (max-width: 500px) {
+  .headerButton {
+    margin-top: 85vh;
+  }
 }
