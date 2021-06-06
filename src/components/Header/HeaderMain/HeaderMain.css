@@ -1,5 +1,5 @@
 .header {
-  background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url(../../../Images/bg.jpg);
+  background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url(../../../Images/bg.jpg)!important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,8 +10,8 @@
 }
 .centered {
   position: absolute;
-  left: 50%; 
-  margin-top: 50vh;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .centered h2{
@@ -26,7 +26,8 @@
 }
 .headerButton{
   position: absolute;
-  margin-top: 65vh;
+  top: 62%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 22px;
   background: none;
@@ -36,16 +37,4 @@
 .headerButton:hover{
   color: #ffee00;
   transition: all 0.5s linear;
-}
-
-@media only screen and (min-width: 351px) and (max-width: 500px) {
-  .headerButton {
-    margin-top: 85vh;
-  }
-  #deals{
-    height: 250vh;
-  }
-  #about{
-    height: 215vh;
-  }
 }
